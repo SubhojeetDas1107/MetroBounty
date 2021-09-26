@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -31,6 +35,66 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.city{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.coordinates{
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main{
+    padding-top: 5px;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.description{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 15px;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+#center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.othertemp{
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.alts{
+    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 button {
