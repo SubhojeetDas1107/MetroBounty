@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/icon.png" rel="icon" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <title>MetroBounty | The Weather web app</title>
+    <meta name="title" content="MetroBounty | The Weather web app">
+    <meta name="description" content="This a weather web app developed by Subhojeet Das which displays next 7 days and all day weather reports and all">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/SubhojeetDas1107/Weather">
+    <meta property="og:title" content="MetroBounty | The Weather web app">
+    <meta property="og:description" content="This a weather web app developed by Subhojeet Das which displays next 7 days and all day weather reports and all">
+    <meta property="og:image" content="https://i.postimg.cc/ZKh1VvnN/banner.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/SubhojeetDas1107/Weather">
+    <meta property="twitter:title" content="MetroBounty | The Weather web app">
+    <meta property="twitter:description" content="This a weather web app developed by Subhojeet Das which displays next 7 days and all day weather reports and all">
+    <meta property="twitter:image" content="https://i.postimg.cc/ZKh1VvnN/banner.png">
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <img class="logo" src="./logo.png" alt="">
+        <div>
+          <form action="" class="search" id="search">
+            <input type="text" id="query" placeholder="Search city..." />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="weather-icon">
+            <img src="icons/sun/4.png" alt="" id="icon" />
+          </div>
+          <div class="temprature">
+            <h1 id="temp">0</h1>
+            <span class="temp-unit">°C</span>
+          </div>
+          <div class="date-time">
+            <p id="date-time">Monday, 12:00</p>
+          </div>
+          <div class="time-zone">
+            <div class="time-zone-text">
+              <p id="zone"></p>
+              <p id="time-zone">Time Zone</p>
+            </div>
+          </div>
+          <div class="description">
+            <div class="description-text">
+              <p id="description">Weather Description</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="condition-rain">
+            <div class="condition">
+              <i class="fas fa-cloud"></i>
+              <p id="condition">condition</p>
+            </div>
+            <div class="rain">
+              <i class="fas fa-tint"></i>
+              <p id="rain">precipitation</p>
+            </div>
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i>
+              <p id="location">location</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <nav>
+          <ul class="options duration">
+            <button class="hourly">today</button>
+            <button class="week active">week</button>
+          </ul>
+          <ul class="options units">
+            <button class="celcius active">°C</button>
+            <button class="fahrenheit">°F</button>
+          </ul>
+        </nav>
+        <div class="cards" id="weather-cards"></div>
+        <div class="highlights">
+          <h2 class="heading">today's highlights</h2>
+          <div class="cards">
+            <div class="card2">
+              <h4 class="card-heading">UV Index</h4>
+              <div class="content">
+                <p class="uv-index">0</p>
+                <p class="uv-text">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Wind Status</h4>
+              <div class="content">
+                <p class="wind-speed">0</p>
+                <p class="">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Sunrise & Sunset</h4>
+              <div class="content">
+                <p class="sun-rise">0</p>
+                <p class="sun-set">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Humidity</h4>
+              <div class="content">
+                <p class="humidity">0</p>
+                <p class="humidity-status">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Visibility</h4>
+              <div class="content">
+                <p class="visibility">0</p>
+                <p class="visibility-status">Low</p>
+              </div>
+            </div>
+            <div class="card2">
+              <h4 class="card-heading">Air Quality</h4>
+              <div class="content">
+                <p class="air-quality">0</p>
+                <p class="air-quality-status">Low</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="credits">Made with ❤️ by <a href="https://github.com/SubhojeetDas1107" target="_blank"><u>Subhojeet Das</u></a></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
